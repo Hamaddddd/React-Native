@@ -1,0 +1,158 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    min-height: 100vh; /* Ensures the body covers the entire screen height */
+    background-color: rgba(0, 0, 0, 0.5);
+                                /* backup color */
+    
+}
+
+body::before {
+    content: " ";
+    position: absolute;
+    
+    width: 100%;
+    height: 100%;
+    background-image: url("https://img.freepik.com/free-vector/background-wave-minimalist-modern-style_483537-5220.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgb(84, 162, 223);
+    padding: 10px 20px;  
+
+    /* 10 from top/bottom and 20 on left/right */
+
+    color: white;
+}
+
+nav ul.menu {
+    display: flex;
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+nav ul.menu li{
+    margin-left: 20px;
+}   
+
+nav ul.menu li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 18px;
+}
+
+nav ul.menu li a:hover{
+    text-decoration: underline;
+    color: black;
+}
+
+img {
+    height: 80px;
+}
+
+h2{
+    margin-top: 10px;
+    margin-left: 40px;
+    color: white;
+    font-size: 30px;
+}
+
+p {
+    margin-left: 40px;
+    color: white;
+    font-weight: 500;
+    font-size: large;
+}
+
+.image-table {
+    width: 50%;
+    border-collapse: collapse;
+    margin-right: 40px;
+    text-align: center;
+    
+}
+
+.image-table td{
+    padding: 10px;
+
+}
+
+.image-table img{
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    border-radius: 15px;
+
+}
+
+
+.img-text-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+footer{
+    background-color: black;
+}
+
+.footer-1 {
+    display: flex;
+    align-items: center;
+}
+
+h3{
+    margin-top: 30px;
+    margin-left: 10px;
+    color: white;
+}
+
+.footer-img {
+    margin-top: 20px;
+}
+
+.address {
+    margin-top: 20px;
+    
+}
+
+.copyright {
+    margin-top: 20px;
+    
+    text-align: center;
+}
+
+.footer-links{
+    color: white;
+    margin-left: 950px;
+    
+}
+
+.footer-links:hover{
+    color: greenyellow;
+    text-decoration: underline;
+
+}
+
+
+
+
+
