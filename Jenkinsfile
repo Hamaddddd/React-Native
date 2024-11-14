@@ -17,8 +17,9 @@ pipeline {
         stage('HTML Validation') {
             steps {
                 echo 'Running HTML Validation...'
-                // Run htmlhint to validate HTML files
-                bat 'htmlhint index.html || echo "HTML issues detected!"'
+                // If htmlhint is installed, validate HTML (e.g., "htmlhint index.html")
+                // Replace this line with any validation tool you have
+                bat 'echo No HTML validation tool installed'
             }
         }
     }
