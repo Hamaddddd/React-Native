@@ -4,7 +4,9 @@ pipeline {
         stage('Clone Repository') {
             steps {
                 // Clone the repository
-                git url: 'https://github.com/your-username/jenkins-website-ci.git'
+                git url: 'https://github.com/Hamaddddd/React-Native.git',
+                branch: 'main', 
+                credentialsId: 'github-pat'
             }
         }
         stage('Build Website') {
