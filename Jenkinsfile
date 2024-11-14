@@ -3,7 +3,6 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                // Clone the repository
                 git url: 'https://github.com/Hamaddddd/React-Native.git',
                 branch: 'main', 
                 credentialsId: 'github-pat'
@@ -11,15 +10,15 @@ pipeline {
         }
         stage('Build Website') {
             steps {
-                // Run the build script, assumed to be "hello.sh"
-                sh './hello.sh'
+                // Run the build script (hello.bat)
+                bat './hello.bat'
             }
         }
         stage('HTML Validation') {
             steps {
-                // Validate HTML, assuming "tidy" is installed
                 echo 'Running HTML Validation...'
-                sh 'tidy -q -e index.html || echo "HTML issues detected!"'
+                // Run htmlhint to validate HTML files
+                bat 'htmlhint index.html || echo "HTML issues detected!"'
             }
         }
     }
